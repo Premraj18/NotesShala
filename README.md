@@ -13,7 +13,7 @@ pnpm dev
 # or
 bun dev
 
-cd backend to start the server
+cd backend
 and then npm run dev
 
 ```
