@@ -10,5 +10,21 @@
     {"sub": "Chemestry"},
     {"sub": "Advance Control System"},
     {"sub": "Enginnering Physics"},
-    {"sub": "Electrical Circuit"}
+    {"sub": "Electrical Circuit"},
+    
+    {"sub": "Anolog Electronics"},
+    {"sub": "Anolog Communication"},
+    {"sub": "Microprocessor and Microcontroller"},
+    {"sub": "Electromagnetic Field Theory"},
+    {"sub": "Elective-I: Soft Computing"},
+    {"sub": "Matlab and Python"},
+
+    {"sub": "Survey"},
+    {"sub": "Strength of Materials"},
+    {"sub": "Building Materials and Concrete Technology"},
+    {"sub": "Enginnering Geology and Seismology"},
+    {"sub": "Fluid Mechanics-I"},
+    {"sub": "Building Planning and Drawing Sessional"}
+
+
 ]
