@@ -26,6 +26,7 @@ export default function SignupPage() {
                     id="username"
                     type="text"
                     value={user.username}
+                    onChange={(e) => setUser({...user, username: e.target.value})}
                     placeholder="username"
                 />
                 <input
@@ -33,6 +34,7 @@ export default function SignupPage() {
                     id="email"
                     type="text"
                     value={user.email}
+                    onChange={(e) => setUser({...user, email: e.target.value})}
                     placeholder="email"
                 />
                 <input
@@ -40,6 +42,7 @@ export default function SignupPage() {
                     id="password"
                     type="text"
                     value={user.password}
+                    onChange={(e) => setUser({...user, password: e.target.value})}
                     placeholder="password"
                 />
                 <button onClick={onSignup} className="p-2 border rounded-lg mb-4 focus:outline-none" style={{
