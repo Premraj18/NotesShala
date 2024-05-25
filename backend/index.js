@@ -4,8 +4,10 @@ const connectdb = require('./db');
 const cookieParser = require('cookie-parser');
 const UserRouter = require('./routes/UserRoutes')
 const NotesRouter = require('./routes/NotesRoutes')
+const TestimonialRouter= require('./routes/TestimonialRoutes')
 const cloudinary = require('cloudinary').v2;
 const cors = require('cors')
+const bodyParser = require('body-parser');
 
 dotenv.config();
 connectdb();
@@ -28,6 +30,7 @@ app.use(cookieParser());
 //Routes
 app.use('/api/users', UserRouter);
 app.use('/api/notes', NotesRouter);
+app.use('/api/testimonials', TestimonialRouter);
 
 //server listening
 app.listen(process.env.PORT, () => {
