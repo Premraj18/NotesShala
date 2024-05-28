@@ -5,6 +5,9 @@
 .p{
     color:  rgb(194, 189, 189);
 }
+.p{
+    color:  rgb(226, 223, 223);
+}
 
 form > div {
   @apply flex flex-col gap-2;

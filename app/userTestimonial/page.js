@@ -56,7 +56,7 @@ const UserTestimonial = () => {
   };
 
   return (
-    <div className="mx-[30vw] mt-[8vw] overflow-hidden">
+    <div className="mx-10 lg:mx-[30vw] mt-[8vw] overflow-hidden">
       <h1 className="text-4xl font-semibold">Send us your Testimonial</h1>
       <form
         onSubmit={handleSubmit}

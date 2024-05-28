@@ -12,6 +12,7 @@ const page = () => {
     const [branch, setBranch] = useState('')
     const [sem, setSem] = useState('1')
     const [file, setFile] = useState('')
+    const fileSizeLimit = 40 * 1024 * 1024;
     const postedBy = "6605655c144c996b0f047dc8"
 
     const showToast = useShowToast();
@@ -20,12 +21,24 @@ const page = () => {
 
     // console.log(sem);
 
+    const handleFile = (e) => {
+        const pdf = e.target.files[0];
+        if (pdf) {
+            if (pdf.size > fileSizeLimit) {
+                showToast('Error', "File size exceeds the limit of 40 MB.", 'error')
+                e.target.value = ''; 
+            } else {
+                setFile(pdf);
+            }
+        }
+    }
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setloading(true)
         try {
-            if (!file) {
-                showToast("Error","file feild must be filled", 'error')
+            if (!file || !branch || !sem || !subject) {
+                showToast("Error", "All feild must be filled", 'error')
                 return;
             }
             const formdata = new FormData();
@@ -61,8 +74,8 @@ const page = () => {
     }
 
     return (
-        <div className='flex flex-col justify-center items-center mt-20'>
-            <form className='shadow-md p-5 w-[50vw]' onSubmit={handleSubmit} >
+        <div className='flex flex-col-reverse justify-center lg:flex-row items-center mt-10 lg:mt-20 lg:gap-10 px-5'>
+            <form className='rounded-2xl p-5 mb-10 lg:w-2/5' onSubmit={handleSubmit} style={{ boxShadow: '0 0 8px rgb(223, 223, 223)' }}>
                 <div className="">
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="branch">
                         Branch
@@ -145,20 +158,47 @@ const page = () => {
                         id="branch"
                         type="file"
                         placeholder="Subject"
-                        onChange={(e) => setFile(e.target.files[0])}
+                        onChange={handleFile}
                     />
                 </div>
 
-                <Stack spacing={10} pt={2}>
+                <Stack spacing={10} pt={2} flex justifyContent={'center'} alignItems={'center'}>
                     <Button
                         type='submit'
                         loadingText="file submitting"
-                        size="lg"
-                        isLoading={loading} style={{ background: 'rgb(194, 189, 189)', padding: '5px', width: '130px', borderRadius: '10px' }}>
+                        size="md"
+                        width={'44'}
+                        isLoading={loading} style={{ background: 'rgb(34, 170, 225)', color: "white", padding: '3px', borderRadius: '10px' }}>
                         Submit
                     </Button>
                 </Stack>
             </form>
+            <div className='lg:w-2/5 h-1/2'>
+                <h2 className='text-2xl font-semibold text-center'>Instruction To Upload File</h2>
+                <ul className='flex flex-col px-5 text-gray-900 justify-center list-disc gap-y-5 pl-10 my-10 w-full'>
+                    <li className=' text-gray-900 '>
+                        Please choose the branch and subject which is suggested below while typing.
+                    </li>
+                    <li className=' text-gray-900 '>
+                        The size limit of pdf file to be uploaded is 40mb.
+                    </li>
+                    <li className=' text-gray-900 '>
+                        Please compress the long size pdf file before uploading.
+                    </li>
+                    <li className=' text-gray-900 '>
+                        For long size pdf file it may take 5 to 10 minutes.
+                    </li>
+                    <li className=' text-gray-900 '>
+                        Please give proper name to the pdf file which will uploaded.
+                    </li>
+                    <li className=' text-gray-900 '>
+                        Please upload the file in proper branch, semester and Subject wise.
+                    </li>
+                    <li className=' text-gray-900 '>
+                        For Previous Year Question please rename the file to pyq.
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }

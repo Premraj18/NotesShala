@@ -31,8 +31,8 @@ const TestimonialCarousel = () => {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center mt-12 overflow-x-hidden">
-      <h1 className="mb-8 text-[3rem] font-bold">OUR HAPPY STUDENTS</h1>
+    <main className="flex mb-10 flex-col items-center mt-12 overflow-x-hidden">
+      <h1 className="mb-8 text-3xl px-2 text-center font-bold">OUR HAPPY STUDENTS</h1>
 
       {error && <div className="text-red-500">{error}</div>}
 
