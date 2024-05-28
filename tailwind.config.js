@@ -12,6 +12,15 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'custom-green': '#F0F8F0',
+        'dark-blue' : '#25A6E0',
+        'light-blue' : '#BDE8FC',
+
+      },
+      fontFamily: {
+        waterfall: ['Waterfall', 'sans-serif'],
+      },
     },
   },
   plugins: [],
