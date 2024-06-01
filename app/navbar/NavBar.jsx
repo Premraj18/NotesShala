@@ -2,10 +2,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-
+import {RegisterLink, LoginLink,LogoutLink} from "@kinde-oss/kinde-auth-nextjs/components";
+import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
-  
+  const {user, isAuthenticated} = useKindeBrowserClient();
   return (
     <div>
       <nav className="w-full bg-custom-green fixed top-0 left-0 right-0 z-10 font-etica">
@@ -56,22 +57,27 @@ function NavBar() {
               } ${navbar ? 'text-center justify-center' : ''}`}
             >
               <ul className={`h-screen md:h-auto items-center ${navbar ? 'justify-center flex-col' : 'md:flex'}`}>
-                <li className={`pb-2 py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
-                  navbar ? 'text-2xl my-4' : 'text-xl'
-                }`}>
-                  <Link href="#profiles" onClick={() => setNavbar(!navbar)}>
-                    <div className="flex items-center justify-center">
-                      <Image
-                        src="/user.svg"
-                        width={20}
-                        height={20}
-                        alt="User"
-                        className="cursor-pointer mr-2"
-                      />
-                      Profile
-                    </div>
-                  </Link>
-                </li>
+                {isAuthenticated&&(
+                   <li className={`pb-2 py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
+                    navbar ? 'text-2xl my-4' : 'text-xl'
+                  }`}>
+                       
+                    <Link href="#profiles" onClick={() => setNavbar(!navbar)}>
+                      <div className="flex items-center justify-center">
+                        <Image
+                          src="/user.svg"
+                          width={20}
+                          height={20}
+                          alt="User"
+                          className="cursor-pointer mr-2"
+                        />
+                        {user.given_name}
+                      </div>
+                    </Link>
+                  </li>
+                )
+                }
+               
                 <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
                   navbar ? 'text-2xl my-4' : 'text-xl'
                 }`}>
@@ -135,7 +141,45 @@ function NavBar() {
                       Contact
                     </div>
                   </Link>
+                  
                 </li>
+               
+                    <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
+                      navbar ? 'text-2xl my-4' : 'text-xl'
+                    }`}>
+                   {
+                  !isAuthenticated&&(
+                      <LoginLink>
+                        <div className="flex items-center justify-center bg-[#29b5f6d5] py-2 px-4 rounded-lg">
+                        SignIn
+                        </div>
+                        </LoginLink>
+                      )
+                      }
+                      {
+                  isAuthenticated&&(
+                      <LogoutLink>
+                        <div className="flex items-center justify-center bg-[#29b5f6d5] py-2 px-4 rounded-lg">
+                        LogOut
+                        </div>
+                        </LogoutLink>
+                      )
+                      }
+                    </li>
+                    
+                  
+                {
+                  !isAuthenticated&&(
+                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
+                      navbar ? 'text-2xl my-4' : 'text-xl'
+                    }`}>
+                      <RegisterLink>
+                        <div className="flex items-center justify-center bg-[#29b5f6d5] py-2 px-2 rounded-lg ">
+                        SignUp
+                        </div>
+                        </RegisterLink>
+                    </li>
+                  )}
               </ul>
             </div>
           </div>
