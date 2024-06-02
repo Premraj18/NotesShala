@@ -150,7 +150,7 @@ function NavBar() {
                    {
                   !isAuthenticated&&(
                       <LoginLink>
-                        <div className="flex items-center justify-center bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5]] py-2 px-4 rounded-lg">
+                        <div className="flex items-center justify-center border-[#29b5f6] py-2 px-4 rounded-lg border-[3px] ">
                         SignIn
                         </div>
                         </LoginLink>
