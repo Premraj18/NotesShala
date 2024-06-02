@@ -1,13 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 
 const UserTestimonial = () => {
+  const { user } = useKindeBrowserClient();
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [picture, setPicture] = useState("");
   const [error, setError] = useState([]);
   const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    if (user) {
+      setPicture(user.picture);
+    }
+  }, [user]);
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevents the form from reloading the page
@@ -15,6 +24,7 @@ const UserTestimonial = () => {
     console.log("Full name: ", fullname);
     console.log("Email: ", email);
     console.log("Message: ", message);
+    console.log("Picture: ", picture);
 
     try {
       const res = await fetch("http://localhost:5000/api/testimonials", {
@@ -26,6 +36,7 @@ const UserTestimonial = () => {
           fullname,
           email,
           message,
+          picture,
         }),
       });
 

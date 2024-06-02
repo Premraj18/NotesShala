@@ -30,6 +30,8 @@ const TestimonialCarousel = () => {
     fetchUsers();
   }, []);
 
+  
+
   return (
     <main className="flex mb-10 flex-col items-center mt-12 overflow-x-hidden">
       <h1 className="mb-8 text-3xl px-2 text-center font-bold">OUR HAPPY STUDENTS</h1>
@@ -45,19 +47,24 @@ const TestimonialCarousel = () => {
       >
         <CarouselContent>
           {Array.isArray(users) && users.map((data, index) => (
+          
             <CarouselItem key={index} className="sm:basis-1/1 md:basis-1/3 lg:basis-1/4">
-              <div className="flex w-[100%] flex-col h-[50vh] rounded-[2rem] items-center justify-center bg-[#29b5f6d5]">
-                <span>
+             
+              <div className=" w-[100%] h-[50vh] rounded-[0.8rem] scale-95 bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] border-gray-200 border-[2px] shadow-md transition-all duration-300 hover:scale-100">
+              <div className="flex w-[96%] flex-col h-[48vh] m-auto mt-1 rounded-[0.8rem] items-center justify-center border-white p-3 border-[2px]">
+                <span className="border-[2px] border-gray-200 p-1 rounded-full">
                   <img
-                    className="aspect-square rounded-full w-[9rem] border-[2px] border-white"
-                    src={data.photo || "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"}
+                    className="aspect-square rounded-full w-[8rem] border-[2px] "
+                    src={data.picture || "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"}
                     alt="picture"
                   />
                 </span>
-                <span className="text-2xl font-semibold p-2 text-white">{data.fullname}</span>
-                <span className="text-lg text-center p-4 text-white">{data.message}</span>
+                <span className="text-xl  p-2 text-black">{data.fullname}</span>
+                <span className="text-lg text-center p-4 text-gray-800">"{data.message}"</span>
+              </div>
               </div>
             </CarouselItem>
+           
           ))}
         </CarouselContent>
 

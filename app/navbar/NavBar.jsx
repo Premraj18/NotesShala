@@ -150,7 +150,7 @@ function NavBar() {
                    {
                   !isAuthenticated&&(
                       <LoginLink>
-                        <div className="flex items-center justify-center bg-[#29b5f6d5] py-2 px-4 rounded-lg">
+                        <div className="flex items-center justify-center bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5]] py-2 px-4 rounded-lg">
                         SignIn
                         </div>
                         </LoginLink>
@@ -159,7 +159,7 @@ function NavBar() {
                       {
                   isAuthenticated&&(
                       <LogoutLink>
-                        <div className="flex items-center justify-center bg-[#29b5f6d5] py-2 px-4 rounded-lg">
+                        <div className="flex items-center justify-center bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] py-2 px-4 rounded-lg">
                         LogOut
                         </div>
                         </LogoutLink>
@@ -174,7 +174,7 @@ function NavBar() {
                       navbar ? 'text-2xl my-4' : 'text-xl'
                     }`}>
                       <RegisterLink>
-                        <div className="flex items-center justify-center bg-[#29b5f6d5] py-2 px-2 rounded-lg ">
+                        <div className="flex items-center justify-center bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] py-2 px-2 rounded-lg ">
                         SignUp
                         </div>
                         </RegisterLink>

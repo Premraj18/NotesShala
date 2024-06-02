@@ -12,7 +12,7 @@ const NotesBranchWise = () => {
             <div className="flex flex-wrap justify-center items-center gap-10">
                 <div className="flex flex-col justify-center items-center">
                     <Link href='/EE'>
-                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-[#29b5f6d5]'>
+                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] transition-all duration-300 hover:scale-105'>
                             Electrical
                         </div>
                     </Link>
@@ -20,7 +20,7 @@ const NotesBranchWise = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <Link href='/ECE'>
-                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2  bg-[#29b5f6d5]'>
+                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2  bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] transition-all duration-300 hover:scale-105'>
                             Electronics and Communication
                         </div>
                     </Link>
@@ -28,7 +28,7 @@ const NotesBranchWise = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <Link href='/ME'>
-                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-[#29b5f6d5]'>
+                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] transition-all duration-300 hover:scale-105'>
                             Mechanical
                         </div>
                     </Link>
@@ -36,7 +36,7 @@ const NotesBranchWise = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <Link href='/CS'>
-                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-[#29b5f6d5]'>
+                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] transition-all duration-300 hover:scale-105'>
                             Computer Science
                         </div>
                     </Link>
@@ -44,14 +44,14 @@ const NotesBranchWise = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <Link href='/CE'>
-                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-[#29b5f6d5]'>
+                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] transition-all duration-300 hover:scale-105'>
                             Civil
                         </div>
                     </Link>
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <Link href='/MME'>
-                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-[#29b5f6d5]'>
+                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] transition-all duration-300 hover:scale-105'>
                             Material and Metallurgy
                         </div>
                     </Link>
@@ -59,7 +59,7 @@ const NotesBranchWise = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <Link href='/PIE'>
-                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-[#29b5f6d5]'>
+                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] transition-all duration-300 hover:scale-105'>
                             Production and Industrial
                         </div>
                     </Link>
@@ -67,7 +67,7 @@ const NotesBranchWise = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <Link href='/ECM'>
-                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-[#29b5f6d5]'>
+                        <div className='w-32 h-28 rounded-xl text-center flex justify-center items-center p-2 bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] transition-all duration-300 hover:scale-105'>
                             Computational mechanics
                         </div>
                     </Link>

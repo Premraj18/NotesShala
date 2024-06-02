@@ -19,9 +19,12 @@ const getAllTestimonials = async (req, res) => {
 
 const createTestimonial = async (req, res) => {
     try {
-        const { fullname, email, message } = req.body;
+        const { fullname, email, message, picture } = req.body;
+
+        console.log("Received data:", { fullname, email, message, picture }); // Log received data
+
         await connectdb();
-        await Testimonial.create({ fullname, email, message });
+        await Testimonial.create({ fullname, email, message ,picture});
         res.status(200).json({ success: true, message: "Message sent successfully" });
     } catch (error) {
         if (error instanceof mongoose.Error.ValidationError) {
