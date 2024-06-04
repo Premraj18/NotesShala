@@ -3,11 +3,15 @@ import React, { useState } from 'react'
 import Link from 'next/link';
 import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi';
 import useShowToast from '@/hooks/useShowToast'
+import {useKindeBrowserClient} from '@kinde-oss/kinde-auth-nextjs'
 
 const Contact = () => {
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')
+
+    const {isAuthenticated} = useKindeBrowserClient();
     const showToast = useShowToast(); 
+
     const handleclick = () => {
         if(!name || !message){
             showToast("Error", "All feild must be filled", 'error')
@@ -50,9 +54,12 @@ const Contact = () => {
                             ></textarea>
                         </div>
                         <div className='flex justify-center items-center'>
-                            <div onClick={handleclick} className='border cursor-pointer w-32 border-blue-500 rounded-lg bg-light-blue p-2 text-center hover:scale-[1.02]'>
+                            {isAuthenticated ? (<div onClick={handleclick} className='border cursor-pointer w-32 border-blue-500 rounded-lg bg-light-blue p-2 text-center hover:scale-[1.02]'>
                                 Submit
-                            </div>
+                            </div>) : (
+                            <div onClick={() => showToast('Error','Not Authorised Please Login !','error')} className='border cursor-pointer w-32 border-blue-500 rounded-lg bg-light-blue p-2 text-center hover:scale-[1.02]'>
+                                Submit
+                            </div>)}
                         </div>
                     </div>
                 </div>

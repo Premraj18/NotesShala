@@ -16,7 +16,6 @@ const page = () => {
     const postedBy = "6605655c144c996b0f047dc8"
 
     const showToast = useShowToast();
-    const toast = useToast()
     const [loading, setloading] = useState(false);
 
     // console.log(sem);

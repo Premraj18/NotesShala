@@ -56,7 +56,7 @@ const page = () => {
   }, [])
 
   return (
-    <div className="flex flex-wrap justify-center items-center lg:mt-10 mt-8 gap-10">
+    <div className="flex flex-wrap justify-center items-center lg:mt-20 mt-8 gap-10">
       {
         notes && notes.length > 0 && notes?.map((item,i) => (
           <div key={i} className="flex flex-col justify-center items-center">
@@ -67,7 +67,7 @@ const page = () => {
       }
       {
         notes.length == 0 && (
-          <div>
+          <div className='text-xl my-10'>
             Notes are not uploaded yet
           </div>
         )
