@@ -12,9 +12,9 @@ const page = () => {
     <>
       <div className='px-10 py-5 mt-20'>
         <h2 className='text-3xl font-semibold py-2'>Notes</h2>
-        <p>Gets your hands on your study materials now !</p>
+        <p>Choose Your semester</p>
       </div>
-      <div className='flex flex-wrap gap-8 my-16 mt-10 px-2 md:px-40 justify-center items-center'>
+      <div className='flex flex-wrap gap-8 my-16 mt-10 px-2 md:px-40 justify-center items-center min-h-[60vh]'>
         <div className=''>
           <Link href={`/${branchValue}/1`}>
             <div className='w-32 h-28 md:w-40 md:h-36 rounded-xl text-center text-2xl flex justify-center items-center p-2 bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] transition-all duration-300 hover:scale-105'>

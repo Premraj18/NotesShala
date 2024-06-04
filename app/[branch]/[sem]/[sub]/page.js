@@ -23,12 +23,12 @@ const page = () => {
         fetchData();
     },[])
     return (
-        <div className='flex flex-wrap justify-center items-center gap-10 mt-20'>
+        <div className='flex flex-wrap justify-center items-center gap-x-7 gap-y-12 mt-24 mb-8 min-h-[80vh]'>
             {
                 notes.map((item) => (
-                    <div className='flex flex-col items-center justify-center' key={item._id}>
+                    <div className='flex flex-col items-center justify-center w-40 text-center px-3' key={item._id}>
                         <a href={item.file} target='_blank'>
-                            <img src="/pdficon.png" alt="" className='w-32'/>
+                            <img src="/pdficon.png" alt="" className='w-24'/>
                         </a>
                         <p>{item.fileName}</p>
                     </div>

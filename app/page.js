@@ -10,11 +10,19 @@ import Contact from "./components/Contact";
 export default function Home() {
   return (
     <div>
-      <NavBar/>
-      <NotesBranchWise/>
-      <TestimonialCarousel/>
-      <ShareNotes/>
-      <Contact/>
+      <NavBar />
+      <div id="notes">
+        <NotesBranchWise />
+      </div>
+      <div id="reviews">
+        <TestimonialCarousel />
+      </div>
+      <div id="uploads">
+        <ShareNotes />
+      </div>
+      <div id="contacts">
+        <Contact />
+      </div>
     </div>
   );
 }

@@ -56,7 +56,7 @@ const page = () => {
   }, [])
 
   return (
-    <div className="flex flex-wrap justify-center items-center lg:mt-20 mt-8 gap-10">
+    <div className="flex flex-wrap justify-center items-center lg:mt-20 mt-24 mb-10 gap-10 min-h-[80vh]">
       {
         notes && notes.length > 0 && notes?.map((item,i) => (
           <div key={i} className="flex flex-col justify-center items-center">

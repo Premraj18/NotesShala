@@ -17,7 +17,7 @@ function NavBar() {
 
   return (
     <div>
-      <nav className="w-full bg-custom-green fixed top-0 left-0 right-0 z-10 font-etica">
+      <nav className="w-full shadow bg-slate-50 fixed top-0 left-0 right-0 z-10 font-etica">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 w-full">
             <div className="md:hidden">
@@ -26,21 +26,19 @@ function NavBar() {
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
-                  <Image src="/close.svg" width={30} height={30} alt="close" />
+                  <img src="/close.svg" className='w-5 md:w-10' alt="close" />
                 ) : (
-                  <Image
+                  <img
                     src="/hamburger-menu.svg"
-                    width={30}
-                    height={30}
                     alt="menu"
-                    className="focus:border-none active:border-none"
+                    className="focus:border-none w-5 md:w-10 active:border-none"
                   />
                 )}
               </button>
             </div>
 
             <Link href="/">
-              <h2 className="text-4xl text-black font-bold ml-4">NOTESHAALA</h2>
+              <h2 className="lg:text-3xl text-2xl text-black font-bold ">NOTESHAALA</h2>
             </Link>
 
             {navbar && (
@@ -59,13 +57,13 @@ function NavBar() {
           </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block' : 'hidden'
+              className={`flex-1 justify-self-center pb-3 md:block md:pb-0 md:mt-0 ${
+                navbar ? 'px-12 py-4 md:p-0 block' : 'hidden'
               } ${navbar ? 'text-center justify-center' : ''}`}
             >
-              <ul className={`h-screen md:h-auto items-center ${navbar ? 'justify-center flex-col' : 'md:flex'}`}>
-                <li className={`pb-2 py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
-                  navbar ? 'text-2xl my-4' : 'text-xl'
+              <ul className={` md:h-auto items-center ${navbar ? 'justify-center flex-col' : 'md:flex'}`}>
+                <li className={`pb-2 py-2 md:px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
+                  navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
                   <Link href="#profiles" onClick={handleLinkClick}>
                     <div className="flex items-center justify-center">
@@ -80,8 +78,8 @@ function NavBar() {
                     </div>
                   </Link>
                 </li>
-                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
-                  navbar ? 'text-2xl my-4' : 'text-xl'
+                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
+                  navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
                   <Link href="#notes" onClick={handleLinkClick}>
                     <div className="flex items-center justify-center space-x-4">
@@ -96,8 +94,8 @@ function NavBar() {
                     </div>
                   </Link>
                 </li>
-                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
-                  navbar ? 'text-2xl my-4' : 'text-xl'
+                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
+                  navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
                   <Link href="#reviews" onClick={handleLinkClick}>
                     <div className="flex items-center justify-center space-x-4">
@@ -112,8 +110,8 @@ function NavBar() {
                     </div>
                   </Link>
                 </li>
-                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
-                  navbar ? 'text-2xl my-4' : 'text-xl'
+                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
+                  navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
                   <Link href="#uploads" onClick={handleLinkClick}>
                     <div className="flex items-center justify-center space-x-4">
@@ -128,8 +126,8 @@ function NavBar() {
                     </div>
                   </Link>
                 </li>
-                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
-                  navbar ? 'text-2xl my-4' : 'text-xl'
+                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
+                  navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
                   <Link href="#contacts" onClick={handleLinkClick}>
                     <div className="flex items-center justify-center space-x-4">
@@ -144,30 +142,30 @@ function NavBar() {
                     </div>
                   </Link>
                 </li>
-                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
-                  navbar ? 'text-2xl my-4' : 'text-xl'
+                <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 border-gray-800 md:hover:text-blue-600 ${
+                  navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
                   {!isAuthenticated && (
                     <LoginLink>
-                      <div className="flex items-center justify-center border-[#29b5f6] py-2 px-4 rounded-lg border-[3px] hover:bg-blue-200">
+                      <div className="flex items-center justify-center border-[#29b5f6] py-1 px-2 rounded-lg border-[3px] hover:bg-blue-200">
                         SignIn
                       </div>
                     </LoginLink>
                   )}
                   {isAuthenticated && (
                     <LogoutLink>
-                      <div className="flex items-center justify-center bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] py-2 px-4 rounded-lg hover:bg-blue-300">
+                      <div className="flex items-center justify-center bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] py-1 px-2 rounded-lg hover:bg-blue-300">
                         LogOut
                       </div>
                     </LogoutLink>
                   )}
                 </li>
                 {!isAuthenticated && (
-                  <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-gray-200 border-gray-800 md:hover:text-black ${
-                    navbar ? 'text-2xl my-4' : 'text-xl'
+                  <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0 border-gray-800 md:hover:text-blue-600 ${
+                    navbar ? 'text-xl my-4' : 'text-xl'
                   }`}>
                     <RegisterLink>
-                      <div className="flex items-center justify-center bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] py-2 px-2 rounded-lg hover:bg-blue-300">
+                      <div className="flex items-center justify-center bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] py-1 px-2 rounded-lg hover:bg-blue-300">
                         SignUp
                       </div>
                     </RegisterLink>
