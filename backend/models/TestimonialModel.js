@@ -24,6 +24,9 @@ const testimonialSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  picture:{
+    type:String,
+  }
 });
 
 const Testimonial =
