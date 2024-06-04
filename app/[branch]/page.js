@@ -10,7 +10,7 @@ const page = () => {
   const branchValue = branch.branch;
   return (
     <>
-     <div className='flex flex-wrap gap-10 mt-10 justify-center items-center'>
+     <div className='flex flex-wrap gap-10 my-16 mt-20 justify-center items-center'>
        <div className=''>
          <Link href={`/${branchValue}/1`}>
           <div className='p-4 border-2'>

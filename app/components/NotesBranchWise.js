@@ -5,7 +5,7 @@ import React from 'react'
 const NotesBranchWise = () => {
     return (
         <div>
-            <div className='px-10 py-5'>
+            <div className='px-10 py-5 mt-16'>
                 <h2 className='text-3xl font-semibold py-2'>Notes</h2>
                 <p>Gets your hands on your study materials now !</p>
             </div>

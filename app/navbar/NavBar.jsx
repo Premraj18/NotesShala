@@ -8,8 +8,8 @@ function NavBar() {
   
   return (
     <div>
-      <nav className="w-full bg-custom-green fixed top-0 left-0 right-0 z-10 font-etica">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <nav className="w-full bg-slate-100 fixed top-0 left-0 right-0 z-10 font-etica">
+        <div className="justify-between  px-4 mx-auto md:items-center md:flex md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 w-full">
           
             <div className="md:hidden">
@@ -32,7 +32,7 @@ function NavBar() {
             </div>
     
             <Link href="/">
-              <h2 className="text-4xl text-black font-bold ml-4">NOTESHAALA</h2>
+              <h2 className="lg:text-4xl text-2xl text-black font-bold lg:ml-4">NOTESHAALA</h2>
             </Link>
            
             {navbar && (
