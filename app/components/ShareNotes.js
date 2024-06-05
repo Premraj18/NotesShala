@@ -8,7 +8,7 @@ const ShareNotes = () => {
     const {isAuthenticated} = useKindeBrowserClient();
     const showToast = useShowToast();
     return (
-        <div className='flex flex-col justify-center items-center gap-5 text-center mb-10'>
+        <div className='flex flex-col bg-slate-50 justify-center items-center gap-5 text-center pb-14 pt-10'>
             <h2 className='text-3xl lg:text-4xl font-semibold'>SHARE YOUR NOTES</h2>
             <p className='lg:text-xl lg:my-5 px-2'>Help your fellow mates with by sharing your valuable notes</p>
             {isAuthenticated && (<Link href='/uploadnotes'>
