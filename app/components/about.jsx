@@ -6,12 +6,8 @@ const About = () => {
 
     return (
         <section className="flex items-center bg-slate-50 w-full font-poppins sm:pt-10 sm:pb-10">
-            <div className="justify-center flex-1 w-full py-4 mx-auto lg:py-4 md:px-6"
-            
-                initial='initial'
-                whileInView='animate'
-            >
-                <div className="px-4 md:text-center md:mb-10">
+            <div className="justify-center flex-1 w-full py-4 mx-auto lg:py-4 md:px-6">
+                <div className="px-4 flex flex-col items-center justify-center text-center md:mb-10">
                     <p className="mb-2 text-2xl font-semibold text-[#3eb4eb] ">
                         About Us
                     </p>
@@ -44,7 +40,7 @@ const About = () => {
                             We believe in transforming spaces into captivating experiences. Our team of passionate designers 
                             merges creativity with functionality, delivering interiors that reflect your unique style and enhance your daily life.
                         </p>
-                        <ul className="ml-16 mt-5 text-center">
+                        <ul className="lg:ml-16 mt-8 text-center">
                             <li className="flex items-center mb-4 text-base ">
                                 <span className="mr-3 text-[#22a3dfd5]  ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
