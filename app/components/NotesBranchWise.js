@@ -7,9 +7,16 @@ import useShowToast from '@/hooks/useShowToast'
 const NotesBranchWise = () => {
     const { isAuthenticated } = useKindeBrowserClient();
     const showToast = useShowToast();
-    return (
-        <div className='pb-10'>
-            <div className='px-10 py-5 mt-16 lg:ml-20 text-center'>
+    return  (
+        <div 
+        className='py-20 min-h-screen bg-cover bg-center bg-no-repeat'
+        style={{ 
+            backgroundImage: "url('https://images.unsplash.com/photo-1527176930608-09cb256ab504?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+        
+            
+        }}
+    >
+            <div className='px-10 py-5 mt-16 lg:ml-20 text-center '>
                 <h2 className='text-3xl lg:text-5xl font-semibold py-2 pb-4'>Notes</h2>
                 <p>Gets your hands on your study materials now !</p>
             </div>
