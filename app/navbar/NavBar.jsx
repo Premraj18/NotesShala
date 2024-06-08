@@ -37,8 +37,9 @@ function NavBar() {
               </button>
             </div>
 
-            <Link href="/">
-              <h2 className="lg:text-3xl text-2xl text-black font-bold ">NOTESHAALA</h2>
+            <Link href="/" className='flex items-center'>
+            <div className='w-16 h-16 bg-cover mr-4' style={{backgroundImage: "url(/NoteShaala_Logo.png)"}}></div>
+              <h2 className="lg:text-3xl text-2xl text-black font-bold hidden md:block ">NOTESHAALA</h2>
             </Link>
 
             {navbar && (
