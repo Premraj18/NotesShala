@@ -16,7 +16,7 @@ const NotesBranchWise = () => {
             
         }}
     >
-            <div className='px-10 py-5 mt-16 lg:ml-20 text-center '>
+            <div className='px-10 py-5 mt-5 lg:ml-20 text-center '>
                 <h2 className='text-3xl lg:text-5xl font-semibold py-2 pb-4'>Notes</h2>
                 <p>Gets your hands on your study materials now !</p>
             </div>
