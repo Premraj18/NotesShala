@@ -19,7 +19,7 @@ function NavBar() {
     <div>
       <nav className="w-full shadow bg-slate-50 fixed top-0 left-0 right-0 z-10 font-etica">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-          <div className="flex items-center justify-between py-3 md:py-5 w-full">
+          <div className="flex items-center justify-between py-2 md:py-3 w-full">
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -38,7 +38,7 @@ function NavBar() {
             </div>
 
             <Link href="/" className='flex items-center'>
-            <div className='w-16 h-16 bg-cover mr-4' style={{backgroundImage: "url(/NoteShaala_Logo.png)"}}></div>
+            <div className='w-12 h-12 sm:w-16 sm:h-16  bg-cover mr-4' style={{backgroundImage: "url(/NoteShaala_Logo.png)"}}></div>
               <h2 className="lg:text-3xl text-2xl text-black font-bold hidden md:block ">NOTESHAALA</h2>
             </Link>
 
