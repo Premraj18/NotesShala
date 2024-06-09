@@ -6,6 +6,7 @@ import axios from 'axios'
 import { useToast } from '@chakra-ui/react'
 import useShowToast from '@/hooks/useShowToast'
 import { Button, Stack } from '@chakra-ui/react'
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 
 const page = () => {
     const [subject, setSubject] = useState('')
@@ -13,7 +14,9 @@ const page = () => {
     const [sem, setSem] = useState('1')
     const [file, setFile] = useState('')
     const fileSizeLimit = 40 * 1024 * 1024;
-    const postedBy = "6605655c144c996b0f047dc8"
+
+    const { user } = useKindeBrowserClient();
+    const postedBy = user?.email;
 
     const showToast = useShowToast();
     const [loading, setloading] = useState(false);
@@ -73,7 +76,7 @@ const page = () => {
     }
 
     return (
-        <div className='flex flex-col-reverse justify-center lg:flex-row items-center mt-10 lg:mt-20 lg:gap-10 px-5'>
+        <div className='flex flex-col-reverse lg:min-h-[90vh] justify-center lg:flex-row items-center mt-10 lg:mt-20 lg:gap-10 px-5'>
             <form className='rounded-2xl p-5 mb-10 lg:w-2/5' onSubmit={handleSubmit} style={{ boxShadow: '0 0 8px rgb(223, 223, 223)' }}>
                 <div className="">
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="branch">
