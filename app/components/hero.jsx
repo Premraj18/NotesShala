@@ -31,7 +31,7 @@ const HeroSection = () => {
         backgroundPosition:'center',
         backgroundRepeat: 'no-repeat',
         // background: 'linear-gradient(to bottom, rgba(2, 2, 2, 0.633),rgba(2, 2, 2, 0.633))',
-      }} className='h-[80vh] sm:h-[90vh]'>
+      }} className='h-[130vw] sm:h-[90vh]'>
          <div className='w-full h-full sm:bg-[url(/Hero.png)] sm:bg-cover sm:bg-center sm:bg-no-repeat flex items-center justify-center'>
         <div className='flex flex-col justify-start items-center h-full w-full' style={{
           // background: 'linear-gradient(to bottom, rgba(2, 2, 2, 0.533), rgba(2, 2, 2, 0.533))'
@@ -44,7 +44,7 @@ const HeroSection = () => {
             <div className='flex flex-col items-center justify-center '>
               <motion.h3 className='text-xl sm:text-3xl font-medium' variants={variants}>WELCOME TO NOTESHAALA</motion.h3>
               <motion.h2 className='text-4xl sm:text-7xl font-semibold my-6 sm:my-10' variants={variants}>GET FREE NOTES</motion.h2>
-              <motion.p className='px-5 md:px-0 md:w-3/5 text-center sm:mb-10 mb-1 sm:text-lg' variants={variants}>
+              <motion.p className='px-12 md:px-0 md:w-3/5 text-center sm:mb-10 mb-1 sm:text-lg' variants={variants}>
               Your digital companion for academic excellence. Get ready to revolutionize your study experience!
               </motion.p>
               <motion.p className='px-5 md:px-0 md:w-3/5 text-center sm:mb-10 mb-1 sm:text-lg' variants={variants}>
