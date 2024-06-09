@@ -1,7 +1,4 @@
 const Notes = require("../models/NotesModel");
-const User = require("../models/UserModel");
-const getDataUri = require("../utils/dataUri");
-const cloudinary = require('cloudinary').v2
 const { google } = require('googleapis')
 const path = require('path')
 const stream = require('stream')

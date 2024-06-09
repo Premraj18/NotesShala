@@ -2,7 +2,6 @@ const express = require('express')
 const dotenv = require('dotenv')
 const connectdb = require('./db');
 const cookieParser = require('cookie-parser');
-const UserRouter = require('./routes/UserRoutes')
 const NotesRouter = require('./routes/NotesRoutes')
 const TestimonialRouter= require('./routes/TestimonialRoutes')
 const cloudinary = require('cloudinary').v2;
@@ -28,7 +27,6 @@ app.use(express.urlencoded({extended: false, limit: '50mb'}));
 app.use(cookieParser());
 
 //Routes
-app.use('/api/users', UserRouter);
 app.use('/api/notes', NotesRouter);
 app.use('/api/testimonials', TestimonialRouter);
 

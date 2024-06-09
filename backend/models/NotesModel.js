@@ -4,8 +4,7 @@ const schema = mongoose.Schema;
 
 const NotesSchema = new schema({
     postedBy:{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'user',
+        type: String,
         required: true
     },
     branch:{
