@@ -42,7 +42,7 @@ const uploadNotes = async (req, res) => {
             },
             requestBody: {
                 name: file.originalname,
-                parents: ["1xGBXhvSL56CvTPIm5GYTe1og5Ahy3jv0"]
+                parents: [process.env.GOOGLE_DRIVE_PARENT]
             },
             fields: "id,name"
         });
