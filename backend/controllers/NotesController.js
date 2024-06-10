@@ -16,11 +16,6 @@ const uploadNotes = async (req, res) => {
     try {
         const { postedBy, branch, semester, subject } = req.body;
         const file = req.file;
-        // console.log(file);
-
-        // const fileUri = getDataUri(file);
-
-        // const mycloud = await cloudinary.uploader.upload(fileUri.content);
 
         if (!postedBy) {
             return res.status(400).json({ message: 'PostedBy and fies upload fields are required' })
