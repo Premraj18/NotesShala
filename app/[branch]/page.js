@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   const branch = useParams();
   // console.log(branch.branch);
   // const branchValue = typeof branch === 'object' ? branch.someProperty : branch;
@@ -77,4 +77,4 @@ const page = () => {
 
 }
 
-export default page
+export default Page

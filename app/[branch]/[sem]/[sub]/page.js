@@ -2,7 +2,7 @@
 import { useParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
-const page = () => {
+const Page = () => {
     const param = useParams();
     const branch = param.branch;
     const sem = param.sem;
@@ -38,4 +38,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
