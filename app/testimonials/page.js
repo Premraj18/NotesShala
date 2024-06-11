@@ -60,12 +60,12 @@ const TestimonialCarousel = () => {
                   <span className="border-[2px] border-gray-200 p-1 rounded-full">
                     <img
                       className="aspect-square rounded-full w-[8rem] border-[2px] "
-                      src={data.picture || "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"}
+                      src={data?.picture || "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"}
                       alt="picture"
                     />
                   </span>
-                  <span className="text-xl  p-2 text-black">{data.fullname}</span>
-                  <span className="text-lg text-center p-4 text-gray-800">"{data.message}"</span>
+                  <span className="text-xl  p-2 text-black">{data?.fullname}</span>
+                  <span className="text-lg text-center p-4 text-gray-800">"{data?.message}"</span>
                 </div>
               </div>
             </CarouselItem>
