@@ -18,7 +18,7 @@ const page = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/notes/${branch}/${semester}`)
+        const res = await fetch(`https://noteshaala.onrender.com/api/notes/${branch}/${semester}`)
 
         const data = await res.json();
 

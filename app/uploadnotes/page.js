@@ -50,7 +50,7 @@ const page = () => {
             formdata.append("subject", subject)
             formdata.append("file", file)
 
-            const res = await axios.post(`http://localhost:5000/api/notes/upload`, formdata, {
+            const res = await axios.post(`https://noteshaala.onrender.com/api/notes/upload`, formdata, {
                 headers: { "Content-Type": "multipart/form-data" }
             })
 

@@ -23,7 +23,7 @@ const TestimonialCarousel = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/testimonials');
+        const response = await axios.get('https://noteshaala.onrender.com/api/testimonials');
         setUsers(response.data.testimonials);
         // console.log(response);
       } catch (err) {

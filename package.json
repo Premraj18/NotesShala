@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev ",
-    "build": "next build && npm install && npm install --prefix backend",
-    "start": "node backend/index.js",
-    "lint": "next lint",
-    "server": "nodemon backend/index.js"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",

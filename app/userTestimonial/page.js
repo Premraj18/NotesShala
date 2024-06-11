@@ -27,7 +27,7 @@ const UserTestimonial = () => {
     console.log("Picture: ", picture);
 
     try {
-      const res = await fetch("http://localhost:5000/api/testimonials", {
+      const res = await fetch("https://noteshaala.onrender.com/api/testimonials", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

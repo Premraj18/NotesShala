@@ -12,7 +12,7 @@ const page = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch(`http://localhost:5000/api/notes/${branch}/${sem}/${sub}`)
+            const res = await fetch(`https://noteshaala.onrender.com/api/notes/${branch}/${sem}/${sub}`)
 
             const data = await res.json();
 
