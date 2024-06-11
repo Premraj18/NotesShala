@@ -8,7 +8,7 @@ import useShowToast from '@/hooks/useShowToast'
 import { Button, Stack } from '@chakra-ui/react'
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 
-const page = () => {
+const Page = () => {
     const [subject, setSubject] = useState('')
     const [branch, setBranch] = useState('')
     const [sem, setSem] = useState('1')
@@ -205,4 +205,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
