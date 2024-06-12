@@ -175,7 +175,7 @@ const Page = () => {
                     </Button>
                 </Stack>
             </form>
-            <div className='lg:w-2/5 h-1/2'>
+            <div className='lg:w-2/5 h-1/2 mt-16 lg:mt-0'>
                 <h2 className='text-2xl font-semibold text-center'>Instruction To Upload File</h2>
                 <ul className='flex flex-col px-5 text-gray-900 justify-center list-disc gap-y-5 pl-10 my-10 w-full'>
                     <li className=' text-gray-900 '>
