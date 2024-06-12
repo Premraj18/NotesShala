@@ -21,14 +21,29 @@ const Page = () => {
     const showToast = useShowToast();
     const [loading, setloading] = useState(false);
 
-    // console.log(sem);
+    const fileExtensionFunctionCheck = (pdf, e, showToast) => {
+        const fileName = pdf.name
+        // console.log(fileName)
+        const fileExtension = fileName.split('.').pop().toLowerCase()
+        const allowedExtensions = ['pdf', 'jpg', 'jpeg', 'png'];
+        // console.log(allowedExtensions)
+        if (!allowedExtensions.includes(fileExtension)) {
+            // console.log("no allowed")
+            showToast('Error', "file must be .pdf, .jpg, .jpeg, or .png", 'error')
+            e.target.value = '';
+        }
+
+    }
 
     const handleFile = (e) => {
         const pdf = e.target.files[0];
+
+        fileExtensionFunctionCheck(pdf, e, showToast);
+
         if (pdf) {
             if (pdf.size > fileSizeLimit) {
                 showToast('Error', "File size exceeds the limit of 40 MB.", 'error')
-                e.target.value = ''; 
+                e.target.value = '';
             } else {
                 setFile(pdf);
             }
@@ -68,7 +83,7 @@ const Page = () => {
             setFile('')
         }
         catch (error) {
-            showToast('Error', error.response.data.message, 'error')
+            showToast('Error', error.response.data.message, 'error')
         }
         finally {
             setloading(false)
