@@ -1,6 +1,7 @@
 "use client"
 import useShowToast from '@/hooks/useShowToast'
 import Link from 'next/link'
+import { ThreeDots } from "react-loader-spinner"
 import { useParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
@@ -15,8 +16,11 @@ const Page = () => {
 
   const [notes, setNotes] = useState([]);
 
+  const [loading, setLoading] = useState(false)
+
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
       try {
         const res = await fetch(`https://noteshaala.onrender.com/api/notes/${branch}/${semester}`)
 
@@ -50,6 +54,9 @@ const Page = () => {
       catch (error) {
         showToast('Error', error, 'error')
       }
+      finally{
+        setLoading(false);
+      }
     }
 
     fetchData();
@@ -66,7 +73,21 @@ const Page = () => {
         ))
       }
       {
-        notes.length == 0 && (
+        loading && (
+          <ThreeDots
+            visible={true}
+            height="80"
+            width="80"
+            color="#29b5f6"
+            radius="9"
+            ariaLabel="three-dots-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+          />
+        )
+      }
+      {
+        !loading && notes.length == 0 && (
           <div className='text-xl my-10'>
             Notes are not uploaded yet
           </div>
