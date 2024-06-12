@@ -68,7 +68,7 @@ const Page = () => {
             setFile('')
         }
         catch (error) {
-            showToast('Error', error, 'error')
+            showToast('Error', error.response.data.message, 'error')
         }
         finally {
             setloading(false)
