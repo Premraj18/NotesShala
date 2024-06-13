@@ -5,6 +5,7 @@
     {"sub": "Materials Science"},
     {"sub": "Environment and Ecology"},
     {"sub": "Electrical Engineering & Measurements"},
+
     {"sub": "Science of Living Systems"},
     {"sub": "Enginnering Mechanics"},
     {"sub": "English for Communication"},
@@ -12,6 +13,7 @@
     {"sub": "Workshop Practicals"},
     {"sub": "Enginnering Mathamtics - II"},
     {"sub": "Basic Electronics and Instrumentaion"},
+
     {"sub": "Electroniccs & Instrumantation"},
     {"sub": "Analog and Digital Electronics"},
     {"sub": "Electromagnetic Field Theory"},
@@ -19,12 +21,15 @@
     {"sub": "Signal System"},
     {"sub": "Advance Engineering Mathematics"},
     {"sub": "Industrial Economics"},
+
     {"sub": "Electrical Machine-I"},
     {"sub": "Power System-I"},
     {"sub": "Power Electronics"},
     {"sub": "Control Systems"},
-    {"sub": "Electrical Measurement and Operating System"},
+    {"sub": "Electrical Measurement and Measuring Instruments"},
     {"sub": "Intellectual Property Rights"},
+    {"sub": "Computer Architecture & Operating System "},
+
     {"sub": "Artificial Intelligence"},
     {"sub": "Renewable Energy Resources and Converters"},
     {"sub": "Power Generation and Economics"},
@@ -33,11 +38,27 @@
     {"sub": "Advance Control Systems"},
     {"sub": "Power System-II"},
 
+    {"sub": "Power System Protection"},
+    {"sub": "Microprocessors & Micro-controllers"},
+    {"sub": "Computer Aided Power System"},
+    {"sub": "Electrical Drives"},
+    {"sub": "FACTS Devices"},
+    {"sub": "Entrepreneurship & Ethics"},
+    {"sub": "HVAC & DC Transmission"},
+
     {"sub": "VLSI Design Flow – RTL to GDS"},
     {"sub": "Communication System"},
     {"sub": "High Voltage Engineering"},
     {"sub": "Modern Power System Practice"},
     {"sub": "Power System Operation and Control"},
+
+    {"sub": ""},
+    {"sub": ""},
+    {"sub": ""},
+    {"sub": ""},
+
+
+
     
     {"sub": "Signal and System"},
     {"sub": "Solid State Device"},
@@ -45,17 +66,26 @@
     {"sub": "Network Theory and Systems"},
     {"sub": "Probability and Stochastic Process"},
     {"sub": "Digital Circuits and System Design"},
+
     {"sub": "Analog Electronics"},
     {"sub": "Analog Communication"},
     {"sub": "Microprocessor and Microcontroller"},
     {"sub": "Electromagnetic Field Theory"},
     {"sub": "Elective-I: Soft Computing"},
     {"sub": "Matlab and Python"},
+
     {"sub": "Intellectual Property Rights"},
     {"sub": "Control System Engineering"},
     {"sub": "Embedded System and IOT"},
     {"sub": "Digital Communication"},
     {"sub": "VLSI Design"},
+
+    {"sub": "Digital Signal Processing"},
+    {"sub": "RF & Microwave Engineering"},
+    {"sub": "Computer Communication & Networking"},
+    {"sub": "VHDL and Verilog"},
+    {"sub": "Information Theory & Coding"},
+    {"sub": "Introduction to Soft Skills"},
 
     {"sub": "Optical Communication"},
     {"sub": "Mobile and Wireless Communication"},
@@ -64,11 +94,34 @@
     {"sub": "Principles of Management"},
     {"sub": "Entrepreneurship"},
 
+    {"sub": "Digital IC Design"},
+    {"sub": "Sensors and Transducers"},
+
+
+
+
+    {"sub": "Mechanics of Solid-I"},
+    {"sub": "Experimental Method for Engineers"},
+    {"sub": "Fluid Mechanics"},
+    {"sub": "Dynamics of Mechanical System"},
+    {"sub": "Economics for Engineers"},
+
+    {"sub": "Bio-Mechanics"},
+    {"sub": "Integrated System Design"},
+    {"sub": "Mechanics of Solids-II"},
+    {"sub": "Product Design & Development"},
+    {"sub": "Data Structures & Operating Systems"},
+    {"sub": "Engineering Ethics and IPR "},
+
+
+
+
     {"sub": "Survey"},
     {"sub": "Strength of Materials"},
     {"sub": "Building Materials and Concrete Technology"},
     {"sub": "Enginnering Geology and Seismology"},
     {"sub": "Fluid Mechanics-I"},
+
     {"sub": "Building Planning and Drawing Sessional"},
     {"sub": "Construction Technology"},
     {"sub": "Structural Analysis-I"},
@@ -77,16 +130,84 @@
     {"sub": "Transportation Engineering-I"},
     {"sub": "Intellectual Property Rights"},
 
-    {"sub": "Manufacturing Process-I"},
-    {"sub": "Fluid Mechanics"},
-    {"sub": "Enginnering Thermodynamics"},
+    {"sub": "Civil Construction Planning and Project Management"},
+    {"sub": "Design for Concrete Structures"},
+    {"sub": "Environmental Engineering-I"},
+    {"sub": "Transportation Engineering-II"},
+    {"sub": "Engineering Hydrology"},
+    {"sub": "Structural Analysis-II"},
+
+    {"sub": "Prestressed Concrete Design"},
+    {"sub": "Advanced Design of Concrete Structure"},
+    {"sub": "Embankment Dam Engineering"},
+    {"sub": "An Introduction to Unsaturated Soil Mechanics"},
+    {"sub": "PE-I A"},
+    {"sub": "PE-I D"},
+    {"sub": "PE-I C"},
+    {"sub": "PE-I B"},
+    {"sub": "Irrigation & Hydraulic Structures"},
+    {"sub": "Geotechnical Engineering–II"},
+    {"sub": "Environmental Engineering-II"},
+    {"sub": "Design of Steel Structures"},
+
+    {"sub": "Civil Construction, Planning and Management"},
+    {"sub": "Irrigation Engineering"},
+    {"sub": "Transportation Engineering-II"},
+    {"sub": "Bridge Engineering"},
+    {"sub": "Pre-Stress Concrete Design"},
+    {"sub": "Structural Dynamics and Earthquake Resistant Design"},
+    {"sub": "Construction Safety and Fire Engineering"},
+    {"sub": "Traffic Engineering"},
+    {"sub": "Rock Engineering"},
+    {"sub": "Pollution – Disease and Climate Change"},
+    {"sub": "Planning for Sustainable Development"},
+    {"sub": "Engineering Risk – Benefit Analysis"},
+
+    {"sub": "Port and Harbour Engineering"},
+    {"sub": "Solid Waste Management"},
+    {"sub": "Disaster Management"},
+    {"sub": "Environmental Pollution and Control"},
+
+
+
     {"sub": "Mechanics of solids-I"},
+    {"sub": "Enginnering Thermodynamics"},
+    {"sub": "Fluid Mechanics"},
     {"sub": "Industrial Economics"},
-    {"sub": "Theory of Machines"},
-    {"sub": "Heat and Mass Transfer"},
+    {"sub": "Manufacturing Process-I"},
+    
+    {"sub": "Phase Transformation and Heat Treatment of Materials"},
     {"sub": "Manufacturing Process-II"},
     {"sub": "Applied Thermodynamics-I"},
+    {"sub": "Heat and Mass Transfer"},
+    {"sub": "Theory of Machines"},
     {"sub": "Mechanics of solids-II"},
+    {"sub": "Analog Communication"},
+
+    {"sub": "Design of Machine Elements"},
+    {"sub": "Fluid Machinery"},
+    {"sub": "Indian Art/Culture"},
+    {"sub": "Industrial Engineering"},
+    {"sub": "Intellectual Property Rights"},
+
+    {"sub": "Design of Mechanical Systems"},
+    {"sub": "Applied Thermodynamics-II"},
+    {"sub": "Solar Energy Process"},
+    {"sub": "Computational Fluid Dynamics"},
+    {"sub": "Gas Dynamics"},
+    {"sub": "Robotics and Automation"},
+    {"sub": "Mechanics of Composite Materials"},
+    {"sub": "Finite Element Method"},
+
+    {"sub": "Computer Aided Design and Manufacturing"},
+    {"sub": "Computational Mechanics"},
+    {"sub": "Ancient Indian Science & Technology"},
+    {"sub": "Robotics and its Applications"},
+    {"sub": "Tribology)"},
+    {"sub": "Automobile Engineering"},
+
+
+
 
     {"sub": "Digital System Design"},
     {"sub": "Design and Analysis of Algorithms"},
@@ -94,10 +215,125 @@
     {"sub": "Introduction to Soft Skills"},
     {"sub": "Probability and Statistics"},
     {"sub": "Discrete Mathematics"},
+
     {"sub": "Database Management Systems"},
     {"sub": "Computer Organization and Architecture"},
     {"sub": "Operating Systems"},
     {"sub": "Artificial Intelligence"},
-    {"sub": "Internet and Web Technology"}
+    {"sub": "Internet and Web Technology"},
+
+    {"sub": "Object Oriented Programming using Java"},
+    {"sub": "Intellectual Property Rights"},
+    {"sub": "Microprocessors and Microcontrollers"},
+    {"sub": "Machine Learning"},
+    {"sub": "Software Engineering"},
+    {"sub": "Theory of Computation"},
+    {"sub": "Capstone Project-I"},
+
+    {"sub": "Compiler Design"},
+    {"sub": "Computer Networks"},
+    {"sub": "Capstone Project-II"},
+    {"sub": "Data Warehousing and Data Mining"},
+    {"sub": "Information Theory and Coding"},
+    {"sub": "Digital Image Processing"},
+
+    {"sub": "Artificial Intelligence"},
+    {"sub": "Web Technology"},
+    {"sub": "Internet of Things"},
+    {"sub": "Organizational Behaviour and Industrial Psychology"},
+    {"sub": "Industrial Economics"},
+
+    {"sub": "Blockchain and its Applications"},
+    {"sub": "Deep Learning"},
+
+
+
+
+
+    {"sub": "Principles of Physical Metallurgy"},
+    {"sub": "Thermodynamics of Materials"},
+    {"sub": "Geology and Mineral Processing"},
+    {"sub": "Introduction to Soft Skills"},
+    {"sub": "Engineering Mathematics-III"},
+    {"sub": "Physics of Materials"},
+    {"sub": "New Generation Fuel, Furnace and Refractories"},
+
+    {"sub": "Deformation Behavior and Processing of Materials"},
+    {"sub": "Electrical Machines-I"},
+    {"sub": "Transport Phenomena in Materials Processing "},
+    {"sub": "Iron Making"},
+    {"sub": "Materials Characterization"},
+    {"sub": "Phase Transformation and Heat Treatment of Materials"},
+
+    {"sub": "Behaviour of Materials toward Failure"},
+    {"sub": "Fluid Machinery"},
+    {"sub": "Manufacturing Process in Metallurgy"},
+    {"sub": "Extraction of Non-Ferrous Metals"},
+    {"sub": "Geo-metallurgy"},
+    {"sub": "Testing of Materials"},
+    {"sub": "Tribology of Materials"},
+
+    {"sub": "Materials Selection and Design"},
+    {"sub": "Advanced Engineering Materials"},
+    {"sub": "Surface Science and Engineering"},
+    {"sub": "Powder Metallurgy and Ceramics"},
+    {"sub": "Intellectual Property Rights"},
+    {"sub": "Super Alloys"},
+    {"sub": "Materials for Automatic Aerospace Application"},
+    {"sub": "Materials for Strategic Applications"},
+
+    {"sub": "Environmental Degradation of Materials and its Protection"},
+    {"sub": "Advanced Engineering Materials"},
+    {"sub": "Creep, Fatigue and Fracture"},
+    {"sub": "Continuous Casting of Steel"},
+    {"sub": "Principles of Management"},
+    {"sub": "Non-Destructive Testing"},
+
+
+
+
+    {"sub": "Mechanics of Solid"},
+    {"sub": "Engineering Thermodynamics"},
+    {"sub": "Measurement and Metrology"},
+    {"sub": "Theory of Machines"},
+    {"sub": "Manufacturing Process-I"},
+    {"sub": "Indian Art Culture and Science"},
+
+    {"sub": "Engineering Economics and Accountancy"},
+    {"sub": "Production Management"},
+    {"sub": "Design of Machine Elements"},
+    {"sub": "Fluid Mechanics and Machinery"},
+    {"sub": "Manufacturing Process-II"},
+
+    {"sub": "CAD/CAM"},
+    {"sub": "Supply Chain Management"},
+    {"sub": "Product Design and Development"},
+    {"sub": "Operations Research"},
+    {"sub": "Fundamentals of Intellectual Property Rights"},
+    {"sub": "Surface Engineering"},
+    {"sub": "Digital Manufacturing"},
+
+    {"sub": "Non-Traditional Manufacturing Processes"},
+    {"sub": "Metal Forming"},
+    {"sub": "Design of Production Tooling"},
+    {"sub": "Concurrent Engineering"},
+    {"sub": "Project Management"},
+    {"sub": "Concurrent Engineering"},
+    {"sub": "Work System Design and Ergonomics"},
+    {"sub": "Micro and Nano manufacturing"},
+    {"sub": "Reliability Engineering"},
+    {"sub": "Business Statistics"},
+    {"sub": "Additive Manufacturing"},
+    {"sub": "Soft Skills"},
+
+    {"sub": "Automation and Robotics"},
+    {"sub": "Supply Chain Management"},
+    {"sub": "Precision Engineering"},
+    {"sub": "Production Design and Process Planning"},
+    {"sub": "Entrepreneurship Management"},
+    {"sub": "Organizational Behaviour and Industrial Psychology"},
+    {"sub": "Manufacturing of Composite Materials"},
+    {"sub": "Advanced Welding Processes"},
+    {"sub": "Work Study Design and Ergonomics"}
 
 ]
