@@ -23,7 +23,7 @@ const Page = () => {
             const postedBy = user.email;
             setLoading(true);
             try {
-                const res = await fetch(`http://localhost:5000/api/notes/name/${postedBy}`)
+                const res = await fetch(`https://noteshaala.onrender.com/api/notes/name/${postedBy}`)
                 const data = await res.json();
 
                 // console.log(data)
