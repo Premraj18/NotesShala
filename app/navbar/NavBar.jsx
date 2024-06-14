@@ -4,12 +4,21 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { RegisterLink, LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
+import useShowToast from '@/hooks/useShowToast';
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const { user, isAuthenticated } = useKindeBrowserClient();
 
+  const showToast = useShowToast();
+
   const handleLinkClick = () => {
+    if (navbar) {
+      setNavbar(false);
+    }
+  };
+  const handleLinkClickProfile = () => {
+    showToast('Error','Not authenticated Please login/signUp!','error');
     if (navbar) {
       setNavbar(false);
     }
@@ -44,7 +53,7 @@ function NavBar() {
 
             {navbar && (
               <div className="mr-4 flex items-center md:hidden">
-                <Link href="/user-profile">
+                <div>
                   <Image
                     src="/user.svg"
                     width={30}
@@ -52,7 +61,7 @@ function NavBar() {
                     alt="User"
                     className="cursor-pointer"
                   />
-                </Link>
+                </div>
               </div>
             )}
           </div>
@@ -66,7 +75,9 @@ function NavBar() {
                 <li className={`pb-2 py-2 md:px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
                   navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
-                  <Link href="#profiles" onClick={handleLinkClick}>
+                  {
+                    isAuthenticated ? (
+                    <Link href='/usernotes' onClick={handleLinkClick}>
                     <div className="flex items-center justify-center">
                       <Image
                         src="/user.svg"
@@ -77,7 +88,20 @@ function NavBar() {
                       />
                       Profile
                     </div>
-                  </Link>
+                  </Link>) : (
+                    <div onClick={handleLinkClickProfile}>
+                    <div className="flex items-center justify-center">
+                      <Image
+                        src="/user.svg"
+                        width={20}
+                        height={20}
+                        alt="User"
+                        className="cursor-pointer mr-2"
+                      />
+                      Profile
+                    </div>
+                  </div>)
+                  }
                 </li>
                 <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
                   navbar ? 'text-xl my-4' : 'text-xl'
