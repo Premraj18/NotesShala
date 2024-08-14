@@ -47,7 +47,7 @@ const NotesBranchWise = () => {
 
                     </div>
                     <div className="flex flex-col justify-center items-center">
-                        <Link href='/CS'>
+                        <Link href='/CSE'>
                             <div className='w-32 h-28 md:w-40 md:h-36 rounded-xl text-center flex justify-center items-center p-2 bg-gradient-to-r from-[#29b5f6] to-[#67c5f1d5] transition-all duration-300 hover:scale-105'>
                                 Computer Science
                             </div>
