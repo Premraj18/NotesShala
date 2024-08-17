@@ -34,11 +34,10 @@ const About = () => {
                     <div className="w-full px-4  lg:w-3/4 lg:mb-0 text-center">
                         <h2
                             className="py-3 pl-2 mb-4 text-2xl font-bold text-gray-700 ">
-                            We are providing a better facility
+                            We are providing a better notes sharing facility !
                         </h2>
                         <p className="mb-4 text-base leading-7 text-gray-500 ">
-                            We believe in transforming spaces into captivating experiences. Our team of passionate designers 
-                            merges creativity with functionality, delivering interiors that reflect your unique style and enhance your daily life.
+                            We believe in transforming spaces into captivating experiences. 
                         </p>
                         <ul className="lg:ml-16 mt-8 text-center">
                             <li className="flex items-center mb-4 text-base ">
@@ -49,7 +48,7 @@ const About = () => {
                                             d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                                     </svg>
                                 </span>
-                                Every project is a canvas, and we tailor our designs to align with your vision and lifestyle.
+                                Everyone in college can upload and view notes, making resources easily accessible.
                             </li>
                             <li className="flex items-center mb-4 text-base ">
                                 <span className="mr-3 text-[#22a3dfd5] ">
@@ -59,7 +58,7 @@ const About = () => {
                                             d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                                     </svg>
                                 </span>
-                                We obsess over the details, ensuring every element harmonizes seamlessly within the space.
+                                Students can share their notes, promoting collaborative learning and diverse perspectives.
                             </li>
                             <li className="flex items-center mb-4 text-base ">
                                 <span className="mr-3 text-[#22a3dfd5]  ">
@@ -69,7 +68,7 @@ const About = () => {
                                             d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                                     </svg>
                                 </span>
-                                We collaborate closely with you, turning your ideas into stunning, functional realities.
+                                The site accommodates different note formats, catering to various learning preferences.
                             </li>
                         </ul>
                     </div>
