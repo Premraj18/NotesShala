@@ -78,9 +78,9 @@ const Page = () => {
             showToast('Success', 'Upload Successfully', 'success')
 
             setBranch('')
-            setSem('')
+            // setSem('')
             setSubject('')
-            setFile('')
+            // setFile('')
         }
         catch (error) {
             showToast('Error', error.response.data.message, 'error')
@@ -89,7 +89,10 @@ const Page = () => {
             setloading(false)
         }
     }
-
+    // console.log(branch)
+    // console.log(sem)
+    // console.log(subject)
+    // console.log(file)
     return (
         <div className='flex flex-col-reverse lg:min-h-[90vh] justify-center lg:flex-row items-center mt-10 lg:mt-20 lg:gap-10 px-5'>
             <form className='rounded-2xl p-5 mb-10 lg:w-2/5' onSubmit={handleSubmit} style={{ boxShadow: '0 0 8px rgb(223, 223, 223)' }}>
