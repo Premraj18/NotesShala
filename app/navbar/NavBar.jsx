@@ -106,7 +106,7 @@ function NavBar() {
                 <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
                   navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
-                  <Link href="#notes" onClick={handleLinkClick}>
+                  <Link href="/#notes" onClick={handleLinkClick}>
                     <div className="flex items-center justify-center space-x-4">
                       <Image
                         src="/notes.svg"
@@ -122,7 +122,7 @@ function NavBar() {
                 <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
                   navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
-                  <Link href="#reviews" onClick={handleLinkClick}>
+                  <Link href="/#reviews" onClick={handleLinkClick}>
                     <div className="flex items-center justify-center space-x-4">
                       <Image
                         src="/smile.svg"
@@ -138,7 +138,7 @@ function NavBar() {
                 <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
                   navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
-                  <Link href="#uploads" onClick={handleLinkClick}>
+                  <Link href="/#uploads" onClick={handleLinkClick}>
                     <div className="flex items-center justify-center space-x-4">
                       <Image
                         src="/upload.svg"
@@ -154,7 +154,7 @@ function NavBar() {
                 <li className={`pb-2 py-2 px-6 text-center border-b-2 md:border-b-0  border-gray-800 md:hover:text-blue-600 ${
                   navbar ? 'text-xl my-4' : 'text-xl'
                 }`}>
-                  <Link href="#contacts" onClick={handleLinkClick}>
+                  <Link href="/#contacts" onClick={handleLinkClick}>
                     <div className="flex items-center justify-center space-x-4">
                       <Image
                         src="/arrows.svg"
