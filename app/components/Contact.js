@@ -67,7 +67,7 @@ const Contact = () => {
                     {/* Phone icon */}
                     <div className="flex items-center mt-2 md:ml-8">
                         <HiOutlinePhone className="mr-2" size={20} />
-                        <span>Phone: +91 7482826996</span>
+                        <span>Phone: +91 7004632130</span>
                     </div>
                     <div className="flex items-center mt-2 md:ml-8">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -75,7 +75,9 @@ const Contact = () => {
 </svg>
                         <span className='hover:underline hover:cursor-pointer hover:text-[gray]'><Link href="/members">Designed and Developed by &rarr;
                         </Link> </span>
+                        
                     </div>
+                    <span className='flex items-center mt-6 w-28'><img src="/innoreva_logo.png" alt="" /></span>
                 </div>
                 {/* Right side */}
                 <div className="bg-lightblue rounded-lg p-4 mt-7 md:mt-0">
