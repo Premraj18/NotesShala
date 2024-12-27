@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi';
 import useShowToast from '@/hooks/useShowToast'
 import {useKindeBrowserClient} from '@kinde-oss/kinde-auth-nextjs'
+import toast from 'react-hot-toast'
 
 const Contact = () => {
     const [name, setName] = useState('')
@@ -12,16 +13,46 @@ const Contact = () => {
     const {isAuthenticated} = useKindeBrowserClient();
     const showToast = useShowToast(); 
 
-    const handleclick = () => {
-        if(!name || !message){
-            showToast("Error", "All feild must be filled", 'error')
+    // const handleclick = () => {
+    //     if(!name || !message){
+    //         showToast("Error", "All feild must be filled", 'error')
+    //     }
+    //     else{
+    //         showToast('Success', 'Thank you! Your form is submitted', 'success')
+    //         setName('');
+    //         setMessage('');
+    //     }
+    // }
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+
+        if (name == '' || message == '') {
+            showToast("error", "Please fill all the credentials!")
+            return;
         }
-        else{
-            showToast('Success', 'Thank you! Your form is submitted', 'success')
+
+        const formData = new FormData();
+        formData.append("name",name)
+        formData.append("message",message)
+    
+        formData.append("access_key", "3e4907d6-f1d4-46b2-89e5-74232098d23a");
+    
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success) {
+            showToast("success", "message sent successfully");
             setName('');
             setMessage('');
+        } else {
+          console.log("Error", data);
+          showToast("error", data.message);
         }
-    }
+    };
     return (
         <div>
             <div className='flex md:justify-evenly justify-center md:flex-row flex-col items-center px-4 py-4'>
@@ -61,7 +92,7 @@ const Contact = () => {
                             ></textarea>
                         </div>
                         <div className='flex justify-center items-center'>
-                            {isAuthenticated ? (<div onClick={handleclick} className='border cursor-pointer w-32 border-blue-500 rounded-lg bg-light-blue p-2 text-center hover:scale-[1.02]'>
+                            {isAuthenticated ? (<div onClick={handleSubmit} className='border cursor-pointer w-32 border-blue-500 rounded-lg bg-light-blue p-2 text-center hover:scale-[1.02]'>
                                 Submit
                             </div>) : (
                             <div onClick={() => showToast('Error','Not Authorised Please Login !','error')} className='border cursor-pointer w-32 border-blue-500 rounded-lg bg-light-blue p-2 text-center hover:scale-[1.02]'>
